@@ -35,7 +35,6 @@ module.exports = {
         '@typescript-eslint',
         'jsx-a11y',
         'import',
-        'vite',
         'prettier'
     ],
     rules: {
