@@ -1,0 +1,6 @@
+{
+    "watch": ["src/server/**/*", "src/dev/runExpressServer.ts"],
+    "ext": "ts",
+    "exec": "ts-node ./src/dev/runExpressServer.ts",
+    "ignore": ["src/client/*", "dist/*"]
+}

@@ -6,6 +6,7 @@
   "main": ".vite/build/main.js",
   "scripts": {
     "start": "electron-forge start",
+    "start:express": "nodemon",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
@@ -23,6 +24,7 @@
     "@electron-forge/plugin-fuses": "^7.4.0",
     "@electron-forge/plugin-vite": "^7.4.0",
     "@electron/fuses": "^1.8.0",
+    "@types/express": "^4.17.21",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
@@ -36,10 +38,12 @@
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
+    "nodemon": "^3.1.4",
     "prettier": "^3.3.3",
     "ts-node": "^10.0.0",
     "typescript": "~4.5.4",
     "vite": "^5.0.12",
+    "vite-plugin-checker": "^0.7.2",
     "vite-plugin-eslint": "^1.8.1"
   },
   "keywords": [],
@@ -50,6 +54,7 @@
   "license": "MIT",
   "dependencies": {
     "electron-squirrel-startup": "^1.0.1",
+    "express": "^4.19.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   }
