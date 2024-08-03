@@ -10,13 +10,12 @@ class Server {
     __publicField(this, "app");
     this.app = express();
   }
-  setupServerRoutes() {
-    this.app.get("/", (req, res) => {
+  start() {
+    this.app.get("/test", (req, res) => {
       res.send("hello there!");
     });
-  }
-  start() {
     this.app.listen(3e3, () => {
+      fsdfsdf;
       console.log("server: server running at port 3000");
     });
   }
