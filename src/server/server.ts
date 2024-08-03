@@ -7,13 +7,11 @@ export class Server {
     this.app = express();
   }
 
-  private setupServerRoutes() {
-    this.app.get('/', (req, res) => {
+  public start() {
+    this.app.get('/test', (req, res) => {
       res.send('hello there!');
     });
-  }
 
-  public start() {
     this.app.listen(3000, () => {
       console.log('server: server running at port 3000');
     });
