@@ -27,7 +27,7 @@ module.exports = {
         'plugin:import/errors',
         'plugin:import/warnings',
         'plugin:import/typescript',
-        'plugin:prettier/recommended', // Integrates Prettier
+        'plugin:prettier/recommended'
     ],
     plugins: [
         'react',
@@ -36,10 +36,11 @@ module.exports = {
         'jsx-a11y',
         'import',
         'vite',
+        'prettier'
     ],
     rules: {
-        // Custom rules can be added here
         '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
-        'react/react-in-jsx-scope': 'off', // Not necessary with React 17+
+        'react/react-in-jsx-scope': 'off',
+        'prettier/prettier': 'error',
     },
 };
